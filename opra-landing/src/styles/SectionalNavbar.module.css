@@ -1,0 +1,100 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #010513;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+    text-align: center;
+    padding-top: 50px;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Space between nav items */
+    justify-content: center; /* Center nav links container */
+    padding: 0;
+    margin: 0 auto; /* Center the nav links horizontally */
+    padding-bottom: 23px;
+    border-bottom: 2px solid #0fb995; 
+    width: 100%; /* Ensure navList spans full width */
+    max-width: 1200px; /* Ensure it doesn't overflow on larger screens */
+  }
+  
+  .navItem {
+    display: inline;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+    position: relative; /* For the active border-bottom */
+  }
+  
+  .navLink:hover {
+    color: #0fb995;
+  }
+  
+  .navLink.active {
+    border-bottom: 2px solid #0fb995; /* Directly apply border-bottom to active link */
+  }
+  
+  /* Section Styles */
+  .section {
+    /* padding: 100px 20px; */
+    /* background-color: #010513; */
+    color: white;
+    min-height: 400px;
+  }
+  
+  .section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Styling for Mobile */
+  @media (max-width: 768px) {
+    .navList {
+      flex-wrap: wrap; /* Allow items to wrap into two rows */
+      justify-content: center; /* Center the nav list */
+      gap: 20px; /* Reduce gap between nav links */
+      padding-left: 0;
+    }
+  
+    /* Set width so that links go in two rows */
+    .navItem {
+      width: 45%; /* Distribute nav items in two rows */
+      text-align: center; /* Center-align each nav link */
+    }
+  
+    .navLink {
+      font-size: 1.2rem; /* Reduce font size for smaller screens */
+      padding-bottom: 3px;
+    }
+  
+    /* Ensure the active link on mobile has a proper border-bottom */
+    .navLink.active {
+      border-bottom: 2px solid #0fb995;
+    }
+  
+    .section {
+      padding: 80px 15px; /* Adjust section padding for mobile */
+    }
+  
+    /* Fix screen overflow */
+    body {
+      overflow-x: hidden; /* Ensure the body doesn't overflow horizontally */
+    }
+  }
+  

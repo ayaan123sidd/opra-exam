@@ -1,0 +1,77 @@
+/* Curriculum Section Styles */
+.aboutHeader {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 40px;
+  }
+.curriculumSection {
+    padding: 50px 100px;
+    background-color: #010513;
+  }
+  
+  /* Grid layout for desktop and mobile */
+  .curriculumGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for desktop */
+    gap: 30px;
+    position: relative;
+  }
+  
+  /* Container for each curriculum, with module box positioned on top */
+  .curriculumContainer {
+    position: relative;
+  }
+  
+  /* Module box that appears on top of the curriculum div */
+  .moduleBox {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    background-color: #030A21;
+    color: #0fb995;
+    padding: 15px 30px;
+    border: 2px solid #0fb995;
+    font-weight: bold;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  /* Curriculum item with background */
+  .curriculumItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0fb995;
+    padding: 15px;
+    padding-top: 40px;
+    border-radius: 10px;
+    color: black; /* Text color for the curriculum description */
+    position: relative;
+    z-index: 0;
+    font-weight: 800;
+  }
+  .lockIcon {
+    width: 24px; /* Set a small size for the lock icon */
+    height: 24px;
+    margin-left: 10px;
+  }
+  
+  /* Responsive layout for mobile */
+  @media (max-width: 768px) {
+    .curriculumSection {
+        padding: 50px 20px;
+      }
+      
+    .curriculumGrid {
+      grid-template-columns: 1fr; /* Single column for mobile */
+    }
+  
+    .moduleBox {
+      font-size: 0.9rem; /* Reduce the size of the module box on mobile */
+    }
+    .lockIcon {
+        width: 20px; /* Adjust the lock icon size for mobile */
+        height: 20px;
+      }
+  }
+  

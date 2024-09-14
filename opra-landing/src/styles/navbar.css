@@ -1,0 +1,134 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: relative; 
+    z-index: 100;
+    width: 100%;
+    max-width: 100vw;
+    /* overflow-x: hidden; */
+  }
+  
+  /* Logo Styles */
+  .logo img {
+    max-width: 130px;
+  }
+  
+  /* Nav Links Styles */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #212529;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Contact Button Styles */
+  .contact-btn a {
+    background-color: #212529;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #212529;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Hamburger Open Animation */
+  .bar.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+  
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .bar.open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+  
+  /* Mobile Menu Open Styles */
+  .nav-links.mobile-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the text inside the drawer */
+    justify-content: center;
+    position: absolute; /* Position the drawer below the navbar */
+    top: 60px; /* Adjust so the drawer appears below the logo and contact button */
+    right: 0;
+    left: 0; /* Ensure the drawer spans the full width */
+    background-color: white;
+    padding: 20px;
+    gap: 15px;
+    z-index: 200;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Center-align the mobile links */
+  .nav-links.mobile-open li {
+    text-align: center;
+  }
+  
+  .nav-links.mobile-open li a {
+    font-size: 1.2rem;
+    color: #212529;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Responsive for Mobile Devices */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide the nav links by default on mobile */
+    }
+  
+    .hamburger {
+      display: flex;
+      order: 3; /* Move the hamburger to the right of the contact button */
+    }
+  
+    .contact-btn {
+      order: 2;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .logo img {
+      max-width: 100px;
+    }
+  
+    .contact-btn a {
+      padding: 8px 16px;
+    }
+  }
+  

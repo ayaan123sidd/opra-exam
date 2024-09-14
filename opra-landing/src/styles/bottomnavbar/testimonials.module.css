@@ -1,0 +1,71 @@
+/* Testimonials Section Styles */
+.testimonialsSection {
+    background-color: #010513;
+    padding: 50px 100px;
+    color: white;
+  }
+  .aboutHeader {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 40px;
+  }
+  /* Columns layout for masonry effect */
+  .testimonialsWrapper {
+    column-count: 5; /* Four columns on desktop */
+    column-gap: 20px; /* Gap between columns */
+  }
+  
+  /* Testimonial item styling */
+  .testimonialItem {
+    background-color: #171D33;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 20px; /* Space between items */
+    break-inside: avoid; /* Prevents breaking items across columns */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Testimonial name styling */
+  .testimonialName {
+    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  /* Hover effect to scale the testimonial item */
+  .testimonialItem:hover {
+    transform: scale(1.05); /* Slight hover scale effect */
+  }
+
+  .testimonialItem p {
+    color:#7B9E9E;
+    font-size: 15px;
+    text-align: left;
+    font-weight: 400;
+  }
+  .testimonialstar img{
+    width: 20px;
+  }
+  /* Responsive for tablets */
+  @media (max-width: 1024px) {
+
+    .testimonialsWrapper {
+      column-count: 3; /* Two columns for tablets */
+    }
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .testimonialsSection {
+        padding: 50px 20px;
+      }
+    .testimonialsWrapper {
+      column-count: 1; /* Single column for mobile */
+    }
+  }
+  

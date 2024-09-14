@@ -1,0 +1,233 @@
+/* Section Styles */
+.course-section {
+    background: linear-gradient(300deg, #030a21 75.44%, #0fb995 100%);
+    padding: 50px 20px;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .course-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px; /* Gap between the two columns */
+    /* height: 100vh */
+    align-items: center;
+  }
+
+  
+  
+  /* Left Column (Text Content) */
+  .left-column {
+    flex: 1;
+  }
+  /* Learning Format Container */
+.learning-format-container {
+    margin-bottom: 20px; /* Add some space between this and the heading */
+    display: flex;
+    align-items: flex-start;
+    
+  }
+  
+  .learning-format {
+    /* background-color: #226C68; */
+    padding: 10px 8px 10px 16px;
+    gap: 0 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, .1);
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    /* padding: 5px 10px; */
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .format-text {
+    margin-right: 10px; /* Space between the two text elements */
+  }
+  
+  .class-type {
+    background-color: #103AC5;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  
+  /* Right Column (YouTube Embed) */
+  .right-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Video Container for 16:9 Aspect Ratio */
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .enroll-button {
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    background: #0fb995;
+    padding: 15px 30px;
+    width: 100%;
+    line-height: 1.1;
+    display: block;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(15, 185, 149, 0.8);
+    transition: all 0.5s ease-in-out;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+  
+  .enroll-button:hover {
+    background-color: #09a580;
+    box-shadow: 0 0 30px rgba(15, 185, 149, 1);
+  }
+  
+  /* Heading and Subheading Styles */
+  .course-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .course-subheading {
+    font-size: 1.5rem;
+    color: #0fb995;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .course-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  /* Info Table Styles */
+  .course-table {
+    display: flex;
+    background-color: #010513;
+    border: 1px solid #343434;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+    position: relative;
+    height: auto;
+    width: 100%;
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+  
+  .table-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Vertical Line Between Table Columns */
+  .course-table::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #343434;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Table Subheading and Heading */
+  .table-subheading {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .table-heading {
+    font-size: 1.5rem;
+    color: #0fb995;
+  }
+  
+  /* Mobile Adjustments */
+  @media screen and (max-width: 768px) {
+    .course-container {
+      flex-direction: column; /* Stack the columns vertically */
+    }
+  
+    .course-table {
+      flex-direction: row;
+      justify-content: space-between;
+      height: auto;
+      width: 100%;
+      padding: 10px; /* Adjust padding for smaller screens */
+      position: relative;
+    }
+  
+    .table-column {
+      padding: 10px 5px; /* Reduce padding for smaller screens */
+    }
+  
+    .course-table::before {
+      display: block; /* Keep vertical line on mobile */
+    }
+  
+    .course-heading {
+      font-size: 2rem; /* Smaller heading for mobile */
+    }
+  
+    .course-subheading {
+      font-size: 1.2rem; /* Smaller subheading for mobile */
+    }
+  
+    .right-column {
+      min-height: auto;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .table-column {
+      font-size: 0.9rem; /* Further reduce font size for very small screens */
+    }
+  
+    .table-subheading {
+      font-size: 1rem;
+    }
+  
+    .table-heading {
+      font-size: 1.2rem;
+    }
+  
+    .course-table::before {
+      height: 100%;
+    }
+  }
+  

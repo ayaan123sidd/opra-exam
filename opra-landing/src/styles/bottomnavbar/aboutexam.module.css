@@ -1,0 +1,86 @@
+/* About Exam Section */
+.aboutExamSection {
+    background-color: white;
+    padding: 50px 20px;
+    margin: 50px 100px;
+  }
+  
+  .procedure{
+    background: linear-gradient(199.37deg, #103ac5 5.1%, #1cbd9b 72.81%);
+    border-radius: 15px;
+    padding-bottom: 20px;
+  }
+  /* Container for the gradient background and content */
+  .aboutExamContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    /* background: linear-gradient(199.37deg, #103ac5 5.1%, #1cbd9b 72.81%); */
+    border-radius: 20px;
+    gap: 30px;
+    margin: 50px;
+  }
+  .aboutHeader {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+  
+  /* Left section with heading and description - 60% width */
+  .aboutExamLeft {
+    flex: 0 0 60%;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    color: white;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: left;
+    font-size: 10px;
+  }
+  
+  /* Right section with the image - 40% width */
+  .aboutExamRight {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .examImage {
+    width: 100%;
+    max-width: 100%; /* Ensure the image is responsive within its container */
+    border-radius: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .aboutExamContainer {
+      flex-direction: column;
+      margin: 0px;
+    }
+  
+    .aboutExamLeft {
+      flex: 1;
+      width: 100%;
+    }
+  
+    .aboutExamRight {
+      flex: 1;
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .examImage {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

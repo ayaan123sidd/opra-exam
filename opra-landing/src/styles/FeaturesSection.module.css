@@ -1,0 +1,79 @@
+.featuresSection {
+    background: linear-gradient(180deg, #103ac5 0%, #0fb995 100%);
+    padding: 50px 20px;
+    border-top: 2px solid #0fb995;
+    border-bottom: 2px solid #0fb995;
+  }
+  
+  .featuresContainer {
+    display: grid;
+    gap: 40px; /* Maintain gap between items */
+    justify-items: center; /* Center the grid items */
+    padding: 10px 80px;
+  }
+  
+  .featureItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Left-align the content inside each feature item */
+    text-align: left;
+    padding: 15px; /* Increased padding for more spacing */ 
+    width: 100%; /* Make sure each feature item takes up full width of its grid cell */
+  }
+  
+  .tickIcon {
+    width: 35px; /* Further increase the tick size */
+    height: 35px;
+    margin-right: 20px; /* Add more space between the tick and text */
+  }
+  
+  .featureItem p {
+    font-size: 1.5rem; /* Increase the font size */
+    font-weight: bold;
+    color: white; /* Change the text color to white */
+  }
+  
+  /* Responsive layout for different devices */
+  
+  /* For Laptops: 3 columns */
+  @media screen and (min-width: 1024px) {
+    .featuresContainer {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* For Tablets: 2 columns */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .featuresContainer {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 10px 20px;
+    }
+  
+    .tickIcon {
+      width: 30px; /* Slightly smaller tick icon for tablets */
+      height: 30px;
+    }
+  
+    .featureItem p {
+      font-size: 1.3rem; /* Slightly smaller text on tablets */
+    }
+  }
+  
+  /* For Mobiles: 1 column */
+  @media screen and (max-width: 767px) {
+    .featuresContainer {
+      grid-template-columns: 1fr;
+      padding:0px;
+      gap:10px
+    }
+  
+    .tickIcon {
+      width: 28px; /* Smaller tick icon for mobile */
+      height: 28px;
+    }
+  
+    .featureItem p {
+      font-size: 1.2rem; /* Adjust the font size for mobile */
+    }
+  }
+  
