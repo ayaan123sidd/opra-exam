@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from '../../styles/bottomnavbar/aboutexam.module.css';
 import EligibilityProcedure from '../bottomnavbar/eligibilityProcedure';
-import examImage from '../../assets/iimmgg.jpg'; // Replace with your image path
+import TestingCentres from '../bottomnavbar/testingcentres'
+import examImage from '../../assets/iimmgg.jpg'; 
 
 const AboutExam = () => {
   return (
@@ -25,8 +26,9 @@ const AboutExam = () => {
 
         </div>
         <EligibilityProcedure />
+        
       </div>
-      
+      <TestingCentres />
     </div>
   );
 };

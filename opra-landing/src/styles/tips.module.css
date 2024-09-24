@@ -1,0 +1,79 @@
+/* Container for the entire Services section */
+.servicesContainer {
+    background-color: #f2f2f2;
+    /* padding: 50px 20px; */
+    text-align: left;
+    padding:20px 100px;
+    padding-bottom: 40px;
+  }
+  
+  /* First Column - Heading */
+  .servicesHeading {
+    margin: 40px;
+    /* margin-bottom: 30px; */
+  }
+  
+  .servicesHeading h2 {
+    font-size: 2rem;
+    color: black;
+  }
+  
+  /* Grid Layout for the services */
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  /* Service Item (icon, title, description) */
+  .serviceItem {
+    text-align: center;
+  }
+  .serviceIcon {
+    /* width: 50px; */
+    /* height: 50px; */
+    /* margin-bottom: 15px; */
+    /* padding: 30px; */
+    /* background-color: #0fb995; */
+    /* padding: 30px; */
+    /* border-radius: 50%; */
+  }
+  .icondiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0fb995; 
+    padding: 25px;
+    border-radius: 50%;
+    width: fit-content;
+    margin: 10px auto;
+  }
+  
+  .serviceTitle {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .serviceDescription {
+    color: gray;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .servicesContainer {
+        background-color: #f2f2f2;
+        /* padding: 50px 20px; */
+        text-align: left;
+        padding:20px
+      }
+    .servicesGrid {
+      grid-template-columns: 1fr;
+      padding: 10px 30px;
+      
+    }
+   
+  }
+  

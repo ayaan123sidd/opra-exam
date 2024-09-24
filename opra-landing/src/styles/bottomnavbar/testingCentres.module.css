@@ -1,0 +1,84 @@
+/* Container for Exam Format Section */
+.examFormatContainer {
+    background: linear-gradient(199.37deg, #103ac5 5.1%, #1cbd9b 72.81%);
+    padding: 30px 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: white;
+    text-align: left;
+  }
+  
+  /* Content Wrapper */
+  .examFormatContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    gap: 30px;
+  }
+  
+  /* Left Column (Exam Format) */
+  .examLeft {
+    flex: 0 0 50%;
+  }
+  
+  /* Right Column (Testing Centres) */
+  .examRight {
+    flex: 0 0 50%;
+  }
+  
+  /* Heading Style */
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Description Text */
+.description{
+    font-size: 15px;
+}
+  /* White Separator Line for Desktop */
+  .separator {
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5px 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .examFormatContainer {
+    padding: 15px;
+    }
+    .examFormatContent {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .separator {
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      position: static;
+      margin: 20px 0;
+      transform: none;
+    }
+  
+    .examLeft, .examRight {
+      flex: 1;
+      width: 100%;
+    }
+  
+    .heading {
+      font-size: 1rem;
+    }
+  
+    .description {
+      font-size: 0.8rem;
+    }
+  }
+  

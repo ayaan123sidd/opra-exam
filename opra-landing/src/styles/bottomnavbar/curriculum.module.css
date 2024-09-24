@@ -55,7 +55,9 @@
     height: 24px;
     margin-left: 10px;
   }
-  
+  .curriculumItem p{
+    font-size: 17px;
+  }
   /* Responsive layout for mobile */
   @media (max-width: 768px) {
     .curriculumSection {

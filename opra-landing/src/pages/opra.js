@@ -4,6 +4,9 @@ import CourseSection from '../components/CourseSection.js'
 import FeaturesSection from '../components/FeaturesSection.js'
 import WhyPharmacistSection from '../components/WhyPharmacistSection.js'
 import SectionalNavbar from '../components/SectionalNavbar.js'
+import Faq from '../components/faq.js'
+import Tips from '../components/tips.js'
+import Footer from '../components/footer.js'
 
 const Opra = () => {
   return (
@@ -13,6 +16,9 @@ const Opra = () => {
         <FeaturesSection />
         <WhyPharmacistSection />
         <SectionalNavbar />
+        <Faq />
+        <Tips />
+        <Footer />
     </div>
   )
 }

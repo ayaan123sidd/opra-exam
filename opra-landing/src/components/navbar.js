@@ -46,13 +46,13 @@ const Navbar = () => {
         <img src={logo} alt="Logo" />
       </div>
       <ul className={isMenuOpen ? 'nav-links mobile-open' : 'nav-links'}>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#blogs">Blogs</a></li>
-        <li><a href="#scholarships">Scholarships</a></li>
-        <li><a href="#events">Events</a></li>
+        <li><a href="https://academically.com/all-courses/">Courses</a></li>
+        <li><a href="https://academically.com/blogs/">Blogs</a></li>
+        <li><a href="https://academically.com/scholarship-program/">Scholarships</a></li>
+        <li><a href="https://academically.com/events/">Events</a></li>
       </ul>
       <div className="contact-btn">
-        <a href="#contact">Contact</a>
+        <a href="https://academically.com/contact-us/">Contact</a>
       </div>
       <div className="hamburger" onClick={toggleMenu}>
         <span className={isMenuOpen ? 'bar open' : 'bar'}></span>

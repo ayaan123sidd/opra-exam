@@ -5,11 +5,12 @@ import lockIcon from '../../assets/lock.png'
 const Curriculum = () => {
   // Array of curriculums
   const curriculums = [
-    'Curriculum 1',
-    'Curriculum 2',
-    'Curriculum 3',
-    'Curriculum 4',
-    'Curriculum 5',
+    'Biomedical Sciences',
+    'Medicinal Chemistry and Biopharmaceutics',
+    'Pharmacokinetics and Pharmacodynamics',
+    'Pharmacologu and Toxicology',
+    'Therapeutics and patient care',
+    'OPRA AI Grand Test',
     // Add more items as needed
   ];
 

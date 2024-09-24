@@ -1,0 +1,124 @@
+/* FAQ Section */
+.faqSection {
+    background-color: white;
+    padding: 50px 20px;
+    margin: 0px 100px;
+  }
+  
+  /* FAQ and Contact Us Container */
+  .faqContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 10px;
+  }
+  .heading{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+  /* FAQ Accordion Section (60% width) */
+  .faqLeft {
+    flex: 0 0 60%;
+  }
+  
+  /* Accordion Item */
+  .accordionItem {
+    border: 2px solid #0fb995;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /* padding: 15px; */
+    cursor: pointer;
+  }
+  
+  .accordionItem.active {
+    border: none; /* Remove border when the accordion is open */
+    border-radius: 10px;
+  }
+  
+  .accordionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 20px;
+    text-align: left;
+  }
+  .accordionHeader p {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .accordionArrow {
+    font-size: 1.5rem;
+    color: #0fb995;
+  }
+  .accordionArrow.active{
+    color: white;
+  }
+  .accordionItem.active .accordionHeader {
+    background-color: #0fb995;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .accordionContent {
+    background-color: #ededed;
+    padding: 20px;
+    color: #555;
+    text-align: left;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  /* Contact Us Section (40% width) */
+  .faqRight {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .contactUs {
+    border: 2px solid #0fb995;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .contactUs p{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .contactButton {
+    background-color: #0fb995;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .faqContainer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .faqSection {
+        margin: 10px;
+      }
+  
+    .faqLeft, .faqRight {
+      flex: 1;
+      width: 100%;
+    }
+  
+    .contactButton {
+      width: 100%;
+    }
+  }
+  

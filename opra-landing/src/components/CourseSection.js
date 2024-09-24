@@ -49,7 +49,7 @@ const CourseSection = () => {
               allowFullScreen
             ></iframe>
           </div>
-          <a href="#enroll" className="enroll-button">
+          <a href="https://academically.com/pharmacist/opra-exam-preparation-course/process/" className="enroll-button">
               Enroll Now
             </a>
         </div>

@@ -4,12 +4,12 @@ import tickIcon from '../assets/tick.png';
 
 const FeaturesSection = () => {
   const points = [
-    'Point 1: Key feature or benefit',
-    'Point 2: Another important aspect',
-    'Point 3: Something users should know',
-    'Point 4: Another feature to highlight',
-    'Point 5: Additional value provided',
-    'Point 6: Final point for emphasis'
+    '120+ hours of live and recorded OPRA Exam video tutorials',
+    'Live classes + recorded sessions, study handouts, mock tests, and final OPRA exam grand test',
+    'Extended OPRA course trainer access',
+    'Adaptive AI-driven OPRA exam mock tests according to Rasch methodology',
+    'One-on-one feedback sessions with the OPRA exam trainer',
+    'Exclusive tips on approaching the new pattern of OPRA exam for international pharmacists'
   ];
 
   return (

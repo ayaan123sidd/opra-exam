@@ -1,41 +1,123 @@
 /* Eligibility Criteria Component */
 .eligibilityContainer {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px;
+}
+
+.div1 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.eligibilityHeading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.eligibilityDescription {
+  color: gray;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.opraExam {
+  color: #0fb995;
+}
+
+.eligibilityList {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.eligibilityList li {
+  margin-bottom: 10px;
+  color: gray;
+  text-align: left;
+}
+
+/* Procedure Container */
+.procedureContainer {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Heading Styling */
+.procedureHeading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.opraText {
+  color: #0fb995;
+}
+
+/* List Styling */
+.procedureList {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+/* Bullet Point Heading */
+.procedureTitle {
+  font-size: 1.1rem;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+/* Bullet Point Description */
+.procedureDescription {
+  color: #6c757d; /* Gray text */
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.procedureList p {
+  font-size: 1rem;
+}
+
+/* Responsive Styles for Tablet and Mobile */
+@media (max-width: 1024px) {
+  .eligibilityHeading, .procedureHeading {
+    font-size: 1.6rem; /* Slightly smaller headings for tablets */
   }
 
-  .div1{
-    padding-bottom: 20px;
+  .procedureTitle {
+    font-size: 1.05rem; /* Smaller font size for tablet headings */
   }
-  
-  .eligibilityHeading {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: black;
+
+  .eligibilityContainer, .procedureContainer {
+    padding: 15px; /* Reduce padding */
+    margin: 20px;
   }
-  .eligibilityDescription{
-    color: gray;
+}
+
+@media (max-width: 768px) {
+  .eligibilityHeading, .procedureHeading {
+    font-size: 1.4rem; /* Smaller headings for mobile */
   }
-  
-  .opraExam {
-    color: #0fb995;
+
+  .eligibilityDescription, .procedureDescription {
+    font-size: 0.9rem; /* Reduce font size for paragraphs */
   }
-  
-  .eligibilityDescription {
-    font-size: 1rem;
-    margin-bottom: 15px;
+
+  .procedureTitle {
+    font-size: 1rem; /* Smaller bullet point headings */
   }
-  
-  .eligibilityList {
-    list-style-type: disc;
-    margin-left: 20px;
+ 
+  .eligibilityContainer, .procedureContainer {
+    padding: 10px; /* Reduce padding for mobile */
+    margin: 5px;
   }
-  
-  .eligibilityList li {
-    margin-bottom: 10px;
-    color: gray;
-    text-align: left;
+
+  .eligibilityList li, .procedureList p {
+    font-size: 0.9rem; /* Reduce list item font size */
   }
-  
+}
